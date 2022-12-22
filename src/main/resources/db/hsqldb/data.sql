@@ -61,3 +61,11 @@ INSERT INTO visits(id,pet_id,visit_date,description) VALUES (1, 7, '2013-01-01',
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04', 'spayed');
+
+
+INSERT INTO cares(id,name,care_duration) VALUES (1,'Hair cut',30), (2,'Exotic shampoo cleaning',15);
+INSERT INTO care_pet_types VALUES (1,2),(1,6),(2,6),(2,1);
+INSERT INTO care_provisions(id, visit_id,user_rating,care_id) VALUES (1,1,'Care rated with 8 stars',1),
+(2,2,'Care rated with 9 stars, I am quite happy!',2);
+
+INSERT INTO incompatible_cares VALUES(1,2);
